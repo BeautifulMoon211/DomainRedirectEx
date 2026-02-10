@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "API-Based URL Redirector",
+  "version": "2.0.0",
+  "description": "Redirects all URLs to a destination fetched from API endpoint",
+  "permissions": [
+    "webNavigation",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "API-Based URL Redirector"
+  }
+}
+
